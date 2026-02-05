@@ -1,3 +1,5 @@
+package source;
+
 public class Calculator {
     private double currentResult;
 
@@ -14,7 +16,7 @@ public class Calculator {
                 if (nextNumber != 0) {
                     currentResult %= nextNumber;
                 } else {
-                    System.out.println("Error: Cannot divide by zero!")
+                    System.out.println("Error: Cannot divide by zero!");
                 }
                 break;
             case "/":
@@ -25,7 +27,7 @@ public class Calculator {
                 }
                 break;
             default:
-                System.out.println("Error: Invalid operation!");
+                System.out.println("Error: Invalid operation Please Input ( - + * / % )!");
         }
     }
 
